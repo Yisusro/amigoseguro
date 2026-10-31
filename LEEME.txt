@@ -1,0 +1,69 @@
+AMIGOSEGURO — LANDING PAGES A/B
+
+ARCHIVOS
+index.html: versión A (prevención de estafas).
+b.html: versión B (independencia y confianza).
+guia.html: recurso gratuito imprimible. Desde Imprimir puedes guardar como PDF.
+Cada landing incluye su propio CSS y JavaScript. No requiere instalación.
+
+VER EN TU COMPUTADORA
+Descomprime el ZIP y abre index.html o b.html con tu navegador.
+Mantén los tres HTML y logo-amigoseguro.png en la misma carpeta para que los enlaces funcionen.
+
+PUBLICAR EN GITHUB PAGES
+1. Crea un repositorio público en GitHub, por ejemplo amigoseguro.
+2. Usa Add file > Upload files y sube los tres HTML y logo-amigoseguro.png a la raíz. No subas el ZIP.
+3. Confirma los archivos con Commit changes.
+4. En Settings > Pages, selecciona Deploy from a branch.
+5. Selecciona main y /(root), y guarda.
+6. Cuando termine la publicación, GitHub mostrará el enlace del sitio.
+La dirección principal abre la versión A. Agrega b.html al final para la B.
+Documentación: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+
+FORMULARIO
+Funciona como demostración: valida campos obligatorios y correo, exige marcar
+la casilla, muestra confirmación y abre la guía. No guarda ni envía datos.
+Para recepción real, configura un servicio de formularios compatible con
+POST JSON y CORS. En ambos HTML busca const FORM_ENDPOINT = "";
+y coloca el endpoint público de tu formulario entre las comillas.
+Nunca coloques contraseñas o claves secretas en estos archivos públicos.
+Antes de activarlo, sustituye el aviso de privacidad por los datos reales
+del responsable, finalidad, conservación y contacto. Actualiza también los
+textos de demostración y la quinta respuesta del chatbot. Verifica la
+recepción con un envío de prueba. No hay envío automático de la guía por email.
+
+CHATBOT
+Incluye cinco preguntas y respuestas programadas y CTA hacia el formulario.
+No es una integración de IA ni un analizador real de enlaces.
+
+PRUEBA A/B PARA EXPLICAR EN CLASE
+Objetivo: comparar qué propuesta consigue más solicitudes de la guía.
+A: prevención, encabezado «Antes de confiar, aprende a verificar».
+B: autonomía, encabezado «Tu vida digital, con más confianza».
+Cambian mensaje, CTA, color del fondo y posición del ejemplo.
+Se mantienen recurso, formulario, público objetivo y contenido restante.
+Es una comparación de dos propuestas completas: no permite atribuir una
+mejora a un único cambio aislado.
+Métrica sugerida: registros recibidos / visitantes únicos de cada variante.
+Para un experimento real faltan distribución aleatoria del tráfico y medición
+de visitas. El envío configurado incluye el campo variante para identificar
+registros. No se inventan resultados ni se implementa analítica en esta demo.
+
+ALCANCE DEL LABORATORIO
+Incluye propuesta de valor, beneficios, lead magnet, CTA, formulario y chat.
+Incluye Inicio, Nosotros, Servicio, Contacto y consejos desplegables.
+Los consejos son nuevos; si ya tienen los artículos del laboratorio 7,
+reemplácenlos por esos artículos para cumplir «mantener el Blog».
+La sección Contacto orienta mediante el chat y el formulario; agrega un canal
+real del equipo si desean recibir consultas.
+No incluye las simulaciones de Google Ads: son otro punto del laboratorio.
+No incluye integración de WhatsApp, aplicación publicada ni análisis real.
+
+VERIFICACIÓN
+Se revisó visualmente cada variante en navegador de escritorio.
+Se comprobó el formulario de demostración y una respuesta del chatbot.
+Incluye estilos para pantallas pequeñas; no se realizó prueba en celular físico.
+
+LOGO
+logo-amigoseguro.png es el logo original proporcionado por el equipo.
+Debe subirse junto con los HTML; no cambies su nombre.
